@@ -13,7 +13,7 @@ steps:
     image: "${{Build}}"
     working_directory: IMAGE_WORK_DIR
     commands:
-      - "version"
+      - "${TIZEN_HOME}/tools/ide/bin/tizen version"
     on_success:
       metadata:
         set:
